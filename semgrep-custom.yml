@@ -1,0 +1,6 @@
+rules:
+  - id: javascript-eval-usage
+    languages: [javascript]
+    severity: ERROR
+    message: Avoid eval() because it can execute untrusted JavaScript code.
+    pattern: eval($X)
